@@ -1,0 +1,267 @@
+@media (max-width: 1440px) {
+    .main__section__content .phone__img .img{
+        height: 600px;
+    }
+
+    .main__section__content .phone__img .img:nth-child(2){
+        left: 300px;
+    }
+    .main__section__content .phone__img{
+        margin-left: 0;
+    }
+
+    #main__section{
+        height: 800px;
+    }
+
+    #main__section .plan__img {
+        top: 163px;
+    }
+
+    .main__section__content .text p{
+        font-size: 27px;
+        margin: 20px 0;
+    }
+
+    #main__section .img__star__2{
+        left: 430px;
+    }
+
+    #main__section .img__star__3{
+        bottom: 190px;
+    }
+
+    #main__section .img__star__1{
+        top: 170px;
+    }
+
+    .about__section__content .info__text p{
+        font-size: 23px;
+    }
+}
+
+@media (max-width: 1370px) {
+    .nav__content .nav__links a{
+        font-size: 17px;
+    }
+
+    .nav__content .app__language{
+        width: 170px;
+        height: 60px;
+    }
+
+    .nav__content .logo {
+        width: 150px;
+        height: 60px;
+    }
+
+    .about__section__content .info__text p{
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 1024px) {
+ 
+    .nav__content .nav__links{
+        gap: 10px;
+    }
+
+    .nav__content .nav__links a{
+        font-size: 15px;
+    }
+
+    .main__section__content .phone__img .img{
+        height: 370px;
+    }
+    .main__section__content .phone__img .img img{
+        width: 100%;
+        object-fit: contain;
+    }
+
+    .main__section__content .phone__img{
+        display: flex;
+        justify-content: end;
+    }
+
+    .main__section__content .phone__img .img:nth-child(2){
+        left: 150px;
+    }
+
+    .main__section__content .text h1{
+        font-size: 25px;
+        z-index: 999;
+        position: relative;
+    }
+
+    .main__section__content .text p{
+        font-size: 20px;
+    }
+
+    #main__section .plan__img{
+        top: 120px;
+    }
+
+    #main__section .img__star__2{
+        left: 280px;
+    }
+
+    #main__section{
+        height: 500px;
+    }
+    .main__section__content .text .btns .btn .btn__text .img{
+        width: 80px;
+     }
+
+     .main__section__content .text .btns .btn span{
+        font-size: 15px;
+     }
+
+    .main__section__content .text .btns .btn .btn__text .img img{
+        width: 100%;
+        height: 100%;
+    }
+
+    .main__section__content .text .btns .btn{
+        width: 190px;
+    }
+}
+
+@media (max-width: 992px) {
+    .nav__content .nav__links{
+        display: none;
+    }
+
+    .nav__content .app__language{
+        display: none;
+    }
+
+    .nav__content .bar__icon{
+        display: flex;
+    }
+}
+
+
+@media (max-width: 768px){
+    .main__section__content .phone__img .img{
+        height: 250px;
+    }
+
+    .main__section__content .phone__img{
+        width: 130px;
+    }
+
+    .main__section__content .phone__img .img:nth-child(2){
+        left: 0;
+        bottom: -50px;
+    }
+
+    #main__section .img__star__2 {
+        left: 145px;
+        top: 100px;
+    }
+
+    #main__section .img__star__3{
+        left: 250px;
+    }
+
+    #main__section .line__img{
+        top: 20px;
+    }
+
+    #main__section .plan__img{
+        top: 70px;
+    }
+
+    #main__section .btn__logo{
+        width: 20px;
+    }
+    .main__section__content .text .btns .btn span{
+        font-size: 11px;
+    }
+    #main__section .btn__logo img{
+      width: 100%;
+      height: 100%;
+    }
+
+    .main__section__content .text .btns .btn .btn__text .img{
+        width: 65px;
+    }
+
+    .main__section__content .text .btns .btn {
+        padding: 5px;
+    }
+
+    #main__section{
+        height: 400px;
+    }
+
+    #main__section .bottom__img{
+        height: 100px;
+        bottom: -30px;
+    }
+    #main__section .bottom__img img{
+       width: 100%;
+       height: 100%;
+    }
+}
+
+@media (max-width: 425px) {
+    .main__section__content{
+        flex-direction: column-reverse;
+    }
+
+    .main__section__content .text{
+        width: 100%;
+        margin-top: 70px;
+        text-align: center;
+    }
+
+    .main__section__content .phone__img{
+        width: 100%;
+    }
+
+    #main__section .line__img{
+        top: 0;
+    }
+
+    #main__section .plan__img {
+        top: 20px;
+        transform: translateX(-50%);
+    }
+
+    .main__section__content .phone__img .img:nth-child(2){
+        left: 110px;
+    }
+
+    #main__section .bottom__img {
+        height: 83px;
+        bottom: 0px;
+    }
+
+    #main__section{
+        height: auto;
+    }
+
+    #main__section .img__bg{
+        height: 400px;
+    }
+
+    #main__section .bottom__img{
+        bottom: 210px;
+    }
+}
+
+
+@media (max-width: 375px) {
+    .main__section__content .phone__img{
+        padding-right: 100px;
+    }
+
+    .main__section__content .phone__img .img:nth-child(2){
+        left: 50px;
+    }
+
+    #main__section .bottom__img{
+        bottom: 250px;
+    }
+}

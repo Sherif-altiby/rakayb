@@ -1,0 +1,351 @@
+:root{
+    --active-color: #FEB200;
+    --main-color: #512EA6;
+    --text-color: #828282;
+}
+
+@font-face {
+    font-family: Somar;
+    src: url('../fonts/alfont_com_SomarGX.ttf');
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    direction: rtl;
+    font-family: "Somar";
+}
+
+.container{
+    width: 100%;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+@media (max-width: 1024px) {
+    .container{
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
+
+a{
+    text-decoration: none;
+}
+
+nav{
+    padding-top: 30px;
+    padding-bottom: 30px;
+    box-shadow: 0 0 5px #75757547;
+}
+
+.nav__content{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav__content .logo{
+    width: 170px;
+    height: 70px;
+}
+
+.nav__content .logo img{
+    width: 100%;
+    height: 100%;
+}
+
+.nav__content .nav__links{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.nav__content .nav__links a{
+    cursor: pointer;
+    color: var(--main-color);
+    font-size: 20px;
+    font-weight: 400;
+    position: relative;
+}
+
+.nav__content .nav__links a.active{
+    color: var(--active-color);
+}
+
+.nav__content .nav__links a.active::before{
+    position: absolute;
+    content: "";
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    background-color: var(--active-color);
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.nav__content .app__language{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    background-color: var(--active-color);
+    color: #fff;
+    cursor: pointer;
+    width: 200px;
+    height: 70px;
+    border-radius: 10px;
+    font-size: 18px;
+}
+
+.nav__content .bar__icon{
+    color: var(--main-color);
+    border: 2px solid var(--main-color);
+    width: 50px;
+    height: 40px;
+    font-size: 25px;
+    border-radius: 5px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    display: none;
+}
+
+/* main section */
+
+#main__section{
+    position: relative;
+    height: 1000px
+}
+
+.main__section__content{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+ }
+
+#main__section .img__bg{
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    height: 100%;
+}
+
+#main__section .img__bg img{
+     width: 100%;
+     height: 100%;
+}
+
+#main__section .line__img{
+    position: absolute;
+    width: 100%;
+    top: 50px;
+}
+
+#main__section .line__img img{
+    width: 100%;
+}
+
+#main__section .plan__img{
+    position: absolute;
+    left: 50%;
+    top: 225px;
+}
+
+#main__section .img__star__1{
+    position: absolute;
+    left: 40px;
+    top: 220px;
+}
+
+#main__section .img__star__2{
+    position: absolute;
+    left: 490px;
+    top: 140px;
+    width: 20px;
+    height: 20px;
+}
+
+#main__section .img__star__2 img{
+  width: 100%;
+  height: 100%;
+}
+#main__section .img__star__3{
+    position: absolute;
+    left: 50%;
+    bottom: 300px;
+    width: 20px;
+    height: 20px;
+}
+
+#main__section .img__star__3 img{
+  width: 100%;
+  height: 100%;
+}
+
+#main__section .bottom__img{
+    position: absolute;
+    right: 20px;
+    bottom: -40px;
+}
+
+.main__section__content .text{
+    width: 50%;
+}
+
+.main__section__content .text h1{
+    font-size: 60px;
+    color: var(--main-color);
+    font-weight: 600;
+}
+
+.main__section__content .text p{
+    font-size: 32px;
+    color: var(--text-color);
+    margin: 50px 0;
+    font-weight: 400
+}
+
+.main__section__content .text .btns{
+    display: flex;
+    margin-top: 20px;
+    gap: 20px;
+}
+
+.main__section__content .text .btns .btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 10px;
+    gap: 0 20px;
+    position: relative;
+    cursor: pointer;
+    width: 260px;
+}
+
+.main__section__content .text .btns .btn span{
+    text-transform: uppercase;
+    color: #fff;
+    text-align: left;
+    display: block;
+}
+
+.main__section__content .text .btns .btn:nth-child(1){
+    background-color: var(--main-color);
+}
+
+.main__section__content .text .btns .btn:nth-child(2){
+    background-color: #FEB200;
+}
+
+.main__section__content .phone__img{
+    position: relative;
+    margin-left: 40px;
+    margin-top: 60px;
+}
+
+.main__section__content .phone__img .img{
+    height: 740px;
+    width: 330px;
+}
+
+.main__section__content .phone__img .img:nth-child(2){
+    position: absolute;
+    left: 375px;
+    bottom: -75px;
+}
+
+.main__section__content .phone__img .img img{
+    height: 100%;
+}
+
+h3{
+    text-align: center;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+}
+
+h3 span{
+    color: var(--main-color);
+    font-size: 40px;
+    font-weight: 500;
+}
+
+h3 img{
+    position: relative;
+    right: 25px;
+}
+
+.about__section__content p{
+    text-align: center;
+    font-size: 36px;
+    margin-top: 30px;
+    color: #FEB200;
+}
+
+.about__section__content .info{
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    align-items: end;
+}
+
+.about__section__content .img-container{
+    position: relative;
+    width: 500px;
+    display: flex;
+    justify-content: center;    
+}
+
+.about__section__content .img-container .bg__img{
+    position: absolute;
+    z-index: -1;
+    left: 0;
+    right: 0;
+}
+
+.about__section__content .phone__img{
+    width: 300px;
+}
+
+.about__section__content .phone__img img{
+    width: 100%;
+}
+.about__section__content .star__img{
+    position: absolute;
+    top: 50%;
+    right: 50px;
+}
+
+.about__section__content .img-container .bg__img img{
+    width: 100%;
+    height: 100%;
+}
+
+.about__section__content .info__text{
+    flex: 1;
+    margin-bottom: 100px;
+}
+
+.about__section__content .info__text p{
+    color: var(--text-color);
+    text-align: right;
+    font-size: 28px;
+}
