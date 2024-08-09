@@ -55,8 +55,20 @@
         height: 60px;
     }
 
+    #main__section .plan__img {
+            top: 155px;
+    }
+
     .about__section__content .info__text p{
         font-size: 20px;
+    }
+
+    .about__section__content .img-container{
+        width: 400px;
+    }
+
+    .about__section__content .phone__img{
+        width: 250px;
     }
 }
 
@@ -98,7 +110,7 @@
     }
 
     #main__section .plan__img{
-        top: 120px;
+        top: 125px;
     }
 
     #main__section .img__star__2{
@@ -123,6 +135,24 @@
 
     .main__section__content .text .btns .btn{
         width: 190px;
+    }
+
+    .about__section__content .img-container{
+        width: 300px;
+    }
+
+    .about__section__content .phone__img{
+        width: 200px;
+    }
+
+    .about__section__content .info__text p{
+        font-size: 17px;
+    }
+
+    .about__section__content .star__img {
+        position: absolute;
+        top: 28%;
+        right: 10px;
     }
 }
 
@@ -203,6 +233,61 @@
        width: 100%;
        height: 100%;
     }
+
+    .about__section__content .info__text p{
+        font-size: 15px;
+    }
+
+    .about__section__content .img-container{
+        width: 270px;
+    }
+
+    .about__section__content .phone__img{
+        width: 170px;
+    }
+
+    .about__section__content .info__text{
+        margin-bottom: 50px;
+    }
+
+    .section__description{
+        font-size: 25px;
+    }
+
+    #about__section .about__line .img__line {
+        position: absolute;
+        left: -250px;
+        top: -290px;
+    }
+
+    #about__section .plan__img {
+        left: 275px;
+        position: absolute;
+        top: 160px;
+    }
+
+    .app__features__content .card{
+        width: calc(100% / 2 - 15px);
+    }
+
+    .app__features__content .card h2{
+        font-size: 20px;
+    }
+
+    .app__features__content .card p {
+        font-size: 15px;
+    }
+
+    .app__features__content .card .img{
+        width: 50px;
+        height: 50px;
+        padding: 10px;
+    }
+
+    h3 span{
+        font-size: 25px;
+    }
+
 }
 
 @media (max-width: 425px) {
@@ -222,11 +307,6 @@
 
     #main__section .line__img{
         top: 0;
-    }
-
-    #main__section .plan__img {
-        top: 20px;
-        transform: translateX(-50%);
     }
 
     .main__section__content .phone__img .img:nth-child(2){
@@ -249,6 +329,50 @@
     #main__section .bottom__img{
         bottom: 210px;
     }
+
+    #about__section{
+        margin-top: 50px;
+    }
+
+    .about__section__content .info{
+        flex-direction: column;
+        gap: 60px;
+    }
+
+    .about__section__content .img-container{
+        width: 100%;
+    }
+
+    #about__section .about__line .img__line {
+        position: absolute;
+        left: -652px;
+        top: -385px;
+        transform: rotate(28deg);
+    }
+
+    #about__section .plan__img {
+        left: 45px;
+        position: absolute;
+        top: 170px;
+    }
+
+    #about__section .plan__img img {
+        transform: rotate(210deg);
+    }
+
+    .section__description{
+        margin-bottom: 30px;
+        font-size: 20px;
+    }
+
+    #main__section .plan__img {
+        top: 15px;
+        transform: translateX(47%) rotate(-13deg);
+    }
+
+    .app__features__content .card{
+        width: 100%;
+    }
 }
 
 
@@ -263,5 +387,30 @@
 
     #main__section .bottom__img{
         bottom: 250px;
+    }
+
+    .about__section__content .info{
+        gap: 0px;
+    }
+
+    #main__section .img__star__3 {
+        left: 50px;
+        bottom: 300px;
+    }
+
+    #main__section .img__star__1 {
+        top: 170px;
+        left: 10px;
+    }
+
+    .main__section__content .phone__img .img:nth-child(2) {
+        left: 30px;
+    }
+}
+
+@media (max-width: 320px) {
+    #main__section .bottom__img{
+        bottom: 275px;
+        right: 0;
     }
 }

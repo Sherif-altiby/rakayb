@@ -22,6 +22,7 @@ html{
 body{
     direction: rtl;
     font-family: "Somar";
+    overflow-x: hidden;
 }
 
 .container{
@@ -76,6 +77,11 @@ nav{
     font-size: 20px;
     font-weight: 400;
     position: relative;
+    transition: 0.3s;
+}
+
+.nav__content .nav__links a:hover{
+    color: var(--active-color);
 }
 
 .nav__content .nav__links a.active{
@@ -98,7 +104,7 @@ nav{
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 5px;
+    gap: 10px;
     background-color: var(--active-color);
     color: #fff;
     cursor: pointer;
@@ -106,6 +112,12 @@ nav{
     height: 70px;
     border-radius: 10px;
     font-size: 18px;
+    transition: 0.3s;
+    position: relative;
+}
+
+.nav__content .app__language:hover{
+    transform: scale(0.9);
 }
 
 .nav__content .bar__icon{
@@ -120,7 +132,84 @@ nav{
     align-items: center;
     justify-content: center;
     display: none;
+    transition: 0.3s;
 }
+
+.nav__content .bar__icon:hover{
+    color: var(--active-color);
+    border-color: var(--active-color);
+}
+
+/* responsive menu */
+
+.responsive__menu{
+    position: fixed;
+    top: 0;
+    right: -100%;
+    background-color: #fff;
+    bottom: 0;
+    z-index: 99999;
+    width: 250px;
+    text-align: center;
+    padding: 20px;
+    transition: 0.3s;
+}
+
+.responsive__menu.show{
+    right: 0;
+}
+
+.overlay{
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    left: -100%;
+    background-color: #999999a1;
+    transition: 0.3s;
+}
+
+.overlay.show{
+    left: 0;
+}
+
+.responsive__menu .app__language{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    background-color: var(--active-color);
+    color: #fff;
+    cursor: pointer;
+    width: 200px;
+    height: 50px;
+    border-radius: 10px;
+    font-size: 18px;
+    transition: 0.3s;
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.responsive__menu .app__language:hover{
+    transform: scale(0.9);
+}
+
+.responsive__menu .nav__links a{
+   color: var(--main-color);
+   transition: 0.3s;
+   font-size: 18px;
+   text-align: right;
+   display: block;
+   margin-bottom: 10px;
+   padding: 10px 0;
+   position: relative;
+   width: auto;
+}
+
+.responsive__menu .nav__links a:hover, .responsive__menu .nav__links a.active{
+    color: var(--active-color);
+}
+
 
 /* main section */
 
@@ -164,6 +253,13 @@ nav{
     position: absolute;
     left: 50%;
     top: 225px;
+    width: 50px;
+    height: 45px;
+}
+
+#main__section .plan__img img{
+    width: 100%;
+    height: 100%;
 }
 
 #main__section .img__star__1{
@@ -237,6 +333,11 @@ nav{
     position: relative;
     cursor: pointer;
     width: 260px;
+    transition: 0.3s;
+}
+
+.main__section__content .text .btns .btn:hover{
+    transform: scale(0.9);
 }
 
 .main__section__content .text .btns .btn span{
@@ -293,7 +394,35 @@ h3 img{
     right: 25px;
 }
 
-.about__section__content p{
+/* about section */
+
+#about__section{
+    position: relative;
+    overflow-x: hidden;
+}
+
+
+#about__section .about__line .img__line{
+    position: absolute;
+    left: -200px;
+    top: -250px;
+}
+
+#about__section .plan__img {
+    left: 300px;
+    position: absolute;
+    top: 194px;
+    width: 50px;
+    height: 45px;
+}
+
+#about__section .plan__img img{
+    transform: rotate(193deg);
+    width: 100%;
+    height: 100%;
+}
+
+.section__description{
     text-align: center;
     font-size: 36px;
     margin-top: 30px;
@@ -311,7 +440,8 @@ h3 img{
     position: relative;
     width: 500px;
     display: flex;
-    justify-content: center;    
+    justify-content: center;  
+    z-index: 1;  
 }
 
 .about__section__content .img-container .bg__img{
@@ -348,4 +478,111 @@ h3 img{
     color: var(--text-color);
     text-align: right;
     font-size: 28px;
+}
+
+/* feature secrion */
+
+#app__features{
+    position: relative;
+    margin-top: 100px;
+}
+
+.app__features__content{
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.app__features__content .card{
+    width: calc(100% / 3 - 15px);
+    border: 1px solid #EBE3FF;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 5px 10px #b7b7b72b;
+    transition: 0.3s;
+}
+
+.app__features__content .card:hover{
+    border-color: var(--main-color);
+    box-shadow: 0 5px 10px var(--main-color);
+}
+
+.app__features__content .card .img{
+    border: 1px dashed var(--main-color);
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    padding: 20px;
+}
+
+.app__features__content .card .img img{
+    width: 100%;
+    height: 100%;
+}
+
+.app__features__content .card h2{
+    color: var(--main-color);
+    font-size: 28px;
+    margin-top: 20px;
+    font-weight: 500;
+}
+
+.app__features__content .card p{
+    font-size: 20px;
+    margin-top: 10px;
+    font-weight: 400;
+    color: var(--text-color);
+}
+
+/* screens section */
+
+#app__screens{
+    direction: ltr;
+    position: relative;
+    width: 100%;
+    height: 650px;
+    margin: 50px 0;
+    margin-top: 150px;
+}
+
+#app__screens .img__bg{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+}
+
+#app__screens .img__bg img{
+    width: 100%;
+    height: 100%;
+}
+
+#app__screens .swiper-container {
+    width: 100%;
+    overflow: hidden;
+    padding: 50px 0;
+}
+
+
+#app__screens  .swiper-container .img{
+    width: 100%;
+    height: 530px;
+ }
+
+#app__screens  .swiper-container .img img{
+    width: 100%;
+    height: 530px;
+}
+
+#app__screens .swiper-container .swiper-pagination{
+    bottom: 50px !important;
+}
+
+#app__screens .swiper-container .swiper-slide.swiper-slide-active{
+    transform: scale(1.2);
 }
