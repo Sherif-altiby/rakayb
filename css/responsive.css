@@ -38,7 +38,93 @@
     .about__section__content .info__text p{
         font-size: 23px;
     }
+
+    #app__screens  .swiper-container .img{
+        height: 400px;
+     }
+
+     #app__screens .swiper-container {
+        padding: 30px 0;
+     }
+
+     #app__screens {
+        height: 520px;
+     }
+
+     .customers__content .customers__feedback{
+        width: 700px;
+     }
+
+     .customers__content .feedback__card span{
+        font-size: 60px;
+     }
+
+     .customers__content .feedback__card p{
+        font-size: 25px;
+     }
+
+     .customers__content .customers__feedback .arrows .swiper-button-next {
+        width: 55px;
+        height: 40px;
+     }
+     .customers__content .customers__feedback .arrows .swiper-button-prev {
+        width: 55px;
+        height: 40px;
+     }
+
+     .customers__content .customers__feedback .arrows{
+        bottom: 80px;
+     }
+
+     .customers__content .feedback__card h4{
+        margin-top: 20px;
+     }
+     .customers__feedback .img{
+        bottom: 0;
+     }
+
+     .customers__content .bg__img{
+        width: 400px;
+     }
+
+     .customers__content .star__img__2{
+        left: 50px;
+     }
+
+     .customers__content{
+        gap: 0;
+     }
+
+     #app_download {
+        height: 1000px;
+     }
+
+     .app_download_content .phone__img {
+        height: 700px;
+     }
+
+     .contact__form form input {
+        height: 60px;
+        font-size: 22px;
+    }
+    
+    .contact__form form textarea{
+        height: 180px;
+        font-size: 22px;
+    }
+
+    #contact__us .contact__img__line {
+        left: 380px;
+        top: -190px;
+    }
+
+    #contact__us .contact__img__line__2 {
+        left: 35%;
+        bottom: -20px;
+    }
+
 }
+
 
 @media (max-width: 1370px) {
     .nav__content .nav__links a{
@@ -70,6 +156,35 @@
     .about__section__content .phone__img{
         width: 250px;
     }
+
+    .customers__content .customers__feedback .arrows{
+        bottom: 50px;
+     }
+
+     .customers__content .feedback__card h4{
+        margin-top: 20px;
+     }
+
+     #app_download{
+        height: 800px;
+     }
+
+     .app_download_content .phone__img {
+        height: 500px;
+     }
+
+     .app_download_content h2 {
+        font-size: 35px;
+     }
+
+     .app_download_content p{
+        font-size: 25px;
+     }
+
+     .app_download_content .btn{
+        width: 200px;
+        height: 60px;
+     }
 }
 
 @media (max-width: 1024px) {
@@ -153,6 +268,71 @@
         position: absolute;
         top: 28%;
         right: 10px;
+    }
+
+    #app__screens {
+        height: 500px;
+      }
+
+      #app__screens .swiper-container .img{
+        height: 350px;
+      }
+
+      .customers__content .customers__feedback{
+        width: 50%;
+        height: 450px;
+      }
+
+      .customers__content .feedback__card h4 {
+        font-size: 22px;
+        margin-top: 10px;
+      }
+
+      .customers__content .feedback__card p{
+        font-size: 18px;
+      }
+
+      .customers__feedback .img {
+        width: 70px;
+        height: 60px;
+        right: 0px;
+        z-index: 9;
+    }
+
+    .customers__content .customer__img{
+        height: 370px;
+    }
+      .customers__content .customer__img .customer__img__man{
+        width: 350px
+      }
+
+      .customers__content .bg__img{
+        width: 350px;
+      }
+
+      .contact__form .section__description{
+        font-size: 20px;
+      }
+
+      #contact__us .contact__img__line {
+        left: 215px;
+        top: -130px;
+        height: 220px;
+    }
+
+    #contact__us .contact__img__line__2 {
+        left: 31%;
+        bottom: 0px;
+        height: 200px;
+    }
+
+    .contact__form form textarea {
+        height: 120px;
+    }
+
+    .contact__form form input {
+        height: 45px;
+        font-size: 18px;
     }
 }
 
@@ -288,6 +468,66 @@
         font-size: 25px;
     }
 
+    .customers__content .feedback__card span{
+        font-size: 40px;
+    }
+
+    .customers__content .feedback__card p {
+        font-size: 15px;
+    }
+
+    .customers__content .feedback__card h4{
+        font-size: 18px;
+    }
+
+    .customers__content .customers__feedback .arrows {
+        bottom: 80px;
+    }
+
+    .customers__content .customer__img .customer__img__man{
+        width: 250px;
+    }
+
+    .customers__content .bg__img{
+        width: 250px;
+    }
+
+    .customers__content .customer__img .star__img {
+        width: 60px;
+        height: 60px;
+    }
+
+    #app_download {
+        height: 500px;
+    }
+
+    .app_download_content .phone__img{
+        height: 350px;
+        margin-bottom: 100px;
+    }
+
+    .app_download_content h2{
+        font-size: 25px;
+    }
+
+    .app_download_content  p{
+        font-size: 18px;
+    }
+
+    .app_download_content .btn {
+        width: 120px;
+        height: 40px;
+    }
+
+    #contact__us .contact__img__line__2{
+        left: 27%;
+    }
+
+    #contact__us .contact__img__line {
+        left: 145px;
+        top: -109px;
+        height: 220px;
+    }
 }
 
 @media (max-width: 425px) {
@@ -373,6 +613,92 @@
     .app__features__content .card{
         width: 100%;
     }
+
+    .customers__content{
+        flex-direction: column-reverse;
+    }
+
+    .customers__content .customers__feedback{
+        width: 100%;
+    }
+
+    .about__section__content .info__text{
+        margin-top: 20px;
+    }
+
+    #app__features{
+        margin-top: 20px;
+    }
+
+    #app__screens .swiper-container .img {
+        width: 300px;
+        margin: auto;
+    }
+
+    #app__screens {
+        margin-top: 20px;
+    }
+
+    .app_download_content{
+        flex-direction: column-reverse;
+        justify-content: start;
+    }
+
+    .app_download_content .download__text{
+        width: 100%;
+        text-align: center;
+    }
+
+    .app_download_content .btns{
+        justify-content: center;
+    }
+
+    .app_download_content .phone__img {
+        width: 200px;
+        height: 200px;
+        margin-bottom: 0;
+    }
+
+    .app_download_content h2{
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
+
+    .app_download_content p{
+        font-size: 15px;
+    }
+
+    .contact__us__content{
+        flex-direction: column-reverse;
+    }
+
+    .contact__img, .contact__form{
+        width: 100%;
+    }
+
+    #contact__us .contact__img__line {
+        left: 143px;
+        top: -65px;
+        height: 123px;
+    }
+
+    #contact__us .contact__img__line__2 {
+        left: 57%;
+        top: 213px;
+        height: 145px;
+    }
+
+    .contact__form h3{
+        justify-content: center;
+    }
+
+    .contact__form .section__description{
+        text-align: center;
+    }
+
+    .contact__form form input, .contact__form form  textarea{
+        font-size: 13px;
+    }
 }
 
 
@@ -406,11 +732,55 @@
     .main__section__content .phone__img .img:nth-child(2) {
         left: 30px;
     }
+
+    #app__screens .swiper-container .img{
+        width: 250px;
+    }
+
+    .customers__content .feedback__card p{
+        font-size: 12px;
+    }
+
+    .customers__content .customers__feedback{
+        padding: 0;
+        height: 350px;
+        margin-top: 30px;
+    }
+
+    .customers__content .customers__feedback .arrows{
+        bottom: 40px;
+    }
+    .customers__feedback .img {
+        width: 50px;
+        height: 40px;
+        right: 0px;
+        z-index: 9;
+    }
+
+    #customers{
+        margin: 20px 0;
+    }
+
+    #contact__us .contact__img__line {
+        left: 85px;
+    }
+
+    #contact__us .contact__img__line__2 {
+        left: 56%;
+        top: 187px;
+        height: 145px;
+    }
 }
 
 @media (max-width: 320px) {
     #main__section .bottom__img{
         bottom: 275px;
         right: 0;
+    }
+
+    #contact__us .contact__img__line__2 {
+        left: 47%;
+        top: 150px;
+        height: 145px;
     }
 }
