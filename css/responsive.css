@@ -185,6 +185,28 @@
         width: 200px;
         height: 60px;
      }
+
+     .main__section__content .text .btns .btn{
+        width: 200px;
+     }
+
+     .main__section__content .text p{
+        font-size: 25px;
+     }
+
+     .app__features__content .card p{
+        font-size: 18px;
+     }
+
+     #contact__us .contact__img__line {
+        left: 360px;
+        top: -140px;
+    }
+
+    #contact__us .contact__img__line__2 {
+        left: 35%;
+        bottom: 20px;
+    }
 }
 
 @media (max-width: 1024px) {
@@ -327,12 +349,49 @@
     }
 
     .contact__form form textarea {
-        height: 120px;
+        height: 100px;
+        font-size: 14px;
+    }
+
+    .contact__form form{
+        gap: 10px;
     }
 
     .contact__form form input {
-        height: 45px;
+        height: 40px;
+        font-size: 14px;
+    }
+
+    footer{
+        height: 250px;
+    }
+
+    footer .footer__logo {
+        display: block;
+        width: 200px;
+        height: 75px;
+    }
+
+    .footer__links .link{
+        width: 35px;
+        height: 35px;
         font-size: 18px;
+    }
+
+    footer .footer__line{
+        width: 170px;
+    }
+
+    footer .star__img:nth-child(4) {
+        top: 190px;
+        right: 30%;
+    }
+    .copy__write p{
+        font-size: 18px;
+    }
+
+    .copy__write h5{
+        font-size: 20px;
     }
 }
 
@@ -528,6 +587,21 @@
         top: -109px;
         height: 220px;
     }
+
+    #app_download .line__img {
+        position: absolute;
+        left: 0;
+        top: 120px;
+        width: 100%;
+    }
+
+    #app_download .plan__img {
+        position: absolute;
+        left: 15px;
+        top: 105px;
+        width: 40px;
+        height: 35px;
+    }
 }
 
 @media (max-width: 425px) {
@@ -657,6 +731,7 @@
         width: 200px;
         height: 200px;
         margin-bottom: 0;
+        animation: none;
     }
 
     .app_download_content h2{
@@ -698,6 +773,51 @@
 
     .contact__form form input, .contact__form form  textarea{
         font-size: 13px;
+    }
+
+    footer .star__img:nth-child(1){
+        top: 15px;
+        left: 15px;
+    }
+
+    footer .footer__line__plan {
+        position: absolute;
+        width: 160px;
+        height: 150px;
+        right: -30px;
+        bottom: -6px;
+    }
+
+    footer .footer__line {
+        width: 70px;
+        height: 130px;
+    }
+
+    footer .star__img:nth-child(3) {
+        top: 20px;
+        right: 20px;
+        width: 16px;
+        height: 16px;
+    }
+
+    footer .star__img:nth-child(4) {
+        top: 205px;
+        right: 15%;
+    }
+
+    footer .footer__logo {
+        display: block;
+        width: 130px;
+        height: 55px;
+    }
+
+    .copy__write{
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .copy__write h5 {
+        font-size: 14px;
     }
 }
 
