@@ -19,6 +19,8 @@ html{
     scroll-behavior: smooth;
 }
 
+
+
 body{
     direction: rtl;
     font-family: "Somar";
@@ -594,8 +596,7 @@ h3 img{
 }
 
 .app__features__content .card:hover{
-    border-color: var(--main-color);
-    box-shadow: 0 5px 10px var(--main-color);
+    box-shadow: 0 5px 10px #512ea6ba;
     transform: translateY(-20px);
 }
 
@@ -688,6 +689,14 @@ h3 img{
 
 #customers{
     margin: 100px 0;
+    position: relative;
+}
+
+#customers .custom__img{
+    position: absolute;
+    bottom: -30px;
+    right: 90px;
+    z-index: 999;
 }
 
 .customers__content{
@@ -786,6 +795,7 @@ h3 img{
     padding: 20px;
     position: relative;
     border-radius: 5px;
+    padding-top: 0px;
 }
 
 .customers__content .feedback__card span{
@@ -1016,8 +1026,11 @@ h3 img{
 
 .contact__form h3{
     justify-content: start;
+    position: relative;
  }
-
+ .contact__form h3 span{
+    position: absolute;
+ }
 
  .contact__form .section__description{
     text-align: right;
@@ -1042,6 +1055,7 @@ h3 img{
 
  .contact__form form textarea{
     height: 300px;
+    resize: none
  }
 
  .contact__form form input[type="submit"]{
@@ -1214,7 +1228,7 @@ footer .footer__line img{
  }
 
  .copy__write p{
-    font-size: 23px;
+    font-size: 18px;
     color: var(--main-color);
  }
 
@@ -1228,8 +1242,11 @@ footer .footer__line img{
 
 .copy__write h5{
     color: var(--main-color);
-    font-size: 24px;
+    font-size: 20px;
     font-weight: 500;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 

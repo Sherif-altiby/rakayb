@@ -19,7 +19,7 @@
     }
 
     .main__section__content .text p{
-        font-size: 27px;
+        font-size: 20px;
         margin: 20px 0;
     }
 
@@ -31,12 +31,18 @@
         bottom: 190px;
     }
 
+    .main__section__content .text .btns .btn {
+        width: 180px;
+        transition: 0.3s;
+        margin-top: 50px;
+    }
+
     #main__section .img__star__1{
         top: 170px;
     }
 
     .about__section__content .info__text p{
-        font-size: 23px;
+        font-size: 20px;
     }
 
     #app__screens  .swiper-container .img{
@@ -60,7 +66,8 @@
      }
 
      .customers__content .feedback__card p{
-        font-size: 25px;
+        font-size: 20px;
+        margin-top: -10px;
      }
 
      .customers__content .customers__feedback .arrows .swiper-button-next {
@@ -71,6 +78,14 @@
         width: 55px;
         height: 40px;
      }
+
+     .customers__content .customers__feedback, .customers__content .customer__img{
+        height: 450px;
+     }
+
+     .app_download_content h2 {
+        font-size: 40px;
+    }
 
      .customers__content .customers__feedback .arrows{
         bottom: 80px;
@@ -105,12 +120,16 @@
 
      .contact__form form input {
         height: 60px;
-        font-size: 22px;
+        font-size: 17px;
+    }
+
+    .section__description{
+        font-size: 30px;
     }
     
     .contact__form form textarea{
         height: 180px;
-        font-size: 22px;
+        font-size: 17px;
     }
 
     #contact__us .contact__img__line {
@@ -121,6 +140,17 @@
     #contact__us .contact__img__line__2 {
         left: 35%;
         bottom: -20px;
+    }
+
+    .app_download_content p{
+        font-size: 20px;
+    }
+
+    .app_download_content .btn {
+        width: 190px;
+        height: 60px;
+        transition: 0.3S;
+        display: block;
     }
 
 }
@@ -174,17 +204,13 @@
      }
 
      .app_download_content h2 {
-        font-size: 35px;
+        font-size: 27px;
      }
 
      .app_download_content p{
-        font-size: 25px;
+        font-size: 20px;
      }
 
-     .app_download_content .btn{
-        width: 200px;
-        height: 60px;
-     }
 
      .main__section__content .text .btns .btn{
         width: 200px;
@@ -264,6 +290,12 @@
      .main__section__content .text .btns .btn span{
         font-size: 15px;
      }
+
+
+     #customers .custom__img {
+        bottom: -30px;
+        right: 20px;
+    }
 
     .main__section__content .text .btns .btn .btn__text .img img{
         width: 100%;
@@ -818,6 +850,10 @@
 
     .copy__write h5 {
         font-size: 14px;
+    }
+
+    section{
+        /* overflow-x: hidden;; */
     }
 }
 
