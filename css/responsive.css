@@ -4,7 +4,7 @@
     }
 
     .main__section__content .phone__img .img:nth-child(2){
-        left: 300px;
+        left: 240px;
     }
     .main__section__content .phone__img{
         margin-left: 0;
@@ -268,6 +268,7 @@
 
     .main__section__content .phone__img .img:nth-child(2){
         left: 150px;
+        height: 350px;
     }
 
     .main__section__content .text h1{
@@ -334,12 +335,12 @@
     }
 
     #app__screens {
-        height: 500px;
+        height: 530px;
         margin-top: 20px;
       }
 
       #app__screens .swiper-container .img{
-        height: 300px;
+        height: 350px;
       }
 
       .customers__content .customers__feedback{
@@ -465,9 +466,11 @@
         width: 130px;
     }
 
-    .main__section__content .phone__img .img:nth-child(2){
-        left: 0;
+    .main__section__content .phone__img .img:nth-child(2) {
+        left: 75px;
         bottom: -50px;
+        width: 180px;
+        height: 229px;
     }
 
     #main__section .img__star__2 {
@@ -696,7 +699,7 @@
     }
 
     .main__section__content .phone__img .img:nth-child(2){
-        left: 110px;
+        left: 170px;
     }
 
     #main__section .bottom__img {
@@ -926,7 +929,7 @@
     }
 
     .main__section__content .phone__img .img:nth-child(2) {
-        left: 30px;
+        left: 130px;
     }
 
     #app__screens .swiper-container .img{
@@ -984,5 +987,9 @@
         left: 47%;
         top: 150px;
         height: 145px;
+    }
+
+    .main__section__content .phone__img .img:nth-child(2) {
+        left: 105px;
     }
 }

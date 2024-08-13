@@ -50,6 +50,10 @@ nav{
     box-shadow: 0 0 5px #75757547;
 }
 
+.app__language .icon{
+    transform: rotate(180deg);
+}
+
 nav .app__language__menu{
     position: absolute;
     background-color: #fff;
@@ -458,10 +462,13 @@ nav .app__language__menu p:hover{
     position: absolute;
     left: 375px;
     bottom: -75px;
+    transform: rotate(15deg);
+    height: 550px;
 }
 
 .main__section__content .phone__img .img img{
     height: 100%;
+    width: 100%;
 }
 
 h3{
@@ -1237,7 +1244,7 @@ footer .footer__line img{
     color: var(--main-color);
  }
 
-.copy__write span{
+.copy__write span a{
     color: red;
 }
 
