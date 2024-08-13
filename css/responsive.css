@@ -85,7 +85,7 @@
      }
 
      .customers__content .feedback__card p{
-        font-size: 20px;
+        font-size: 18px;
         margin-top: -10px;
      }
 
@@ -99,7 +99,7 @@
      }
 
      .customers__content .customers__feedback, .customers__content .customer__img{
-        height: 450px;
+        height: 400px;
      }
 
      .app_download_content h2 {
@@ -209,6 +209,7 @@
 
      .customers__content .feedback__card h4{
         margin-top: 20px;
+        font-size: 22px;
      }
 
      #app_download{
@@ -663,7 +664,7 @@
         padding-bottom: 15px;
         box-shadow: 0 0 5px #75757547;
     }
-    
+
     .nav__content .logo {
         width: 106px;
         height: 40px;
@@ -957,13 +958,19 @@
     }
 
     #contact__us .contact__img__line {
-        left: 85px;
+        left: 110px;
     }
 
     #contact__us .contact__img__line__2 {
         left: 56%;
         top: 187px;
         height: 145px;
+    }
+
+    #customers .custom__img {
+        bottom: -23px;
+        right: 5px;
+        width: 40px;
     }
 }
 
