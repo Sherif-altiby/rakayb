@@ -673,7 +673,7 @@ h3 img{
 }
 
 #app__screens .swiper-container .swiper-slide.swiper-slide-active{
-    transform: scale(1.2);
+    transform: scale(1.3);
 }
 
  #app__screens .swiper-pagination-bullet{
@@ -697,6 +697,11 @@ h3 img{
     bottom: -30px;
     right: 90px;
     z-index: 999;
+}
+
+#customers .custom__img img{
+    width: 100%;
+    height: 100%;
 }
 
 .customers__content{
@@ -1092,7 +1097,7 @@ footer{
     position: relative;
     background-position: center;
     background-size: cover;
-    margin-top: 50px;
+    margin-top: 100px;
 }
 
 footer::before{

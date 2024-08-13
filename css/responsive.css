@@ -1,4 +1,4 @@
-@media (max-width: 1440px) {
+@media (max-width: 1640px) {
     .main__section__content .phone__img .img{
         height: 600px;
     }
@@ -14,6 +14,10 @@
         height: 800px;
     }
 
+    .main__section__content .text h1{
+        font-size: 45px;
+    }
+
     #main__section .plan__img {
         top: 163px;
     }
@@ -21,6 +25,8 @@
     .main__section__content .text p{
         font-size: 20px;
         margin: 20px 0;
+        width: 95%;
+        line-height: 2;
     }
 
     #main__section .img__star__2{
@@ -35,6 +41,7 @@
         width: 180px;
         transition: 0.3s;
         margin-top: 50px;
+        margin-top: 10px;
     }
 
     #main__section .img__star__1{
@@ -51,11 +58,23 @@
 
      #app__screens .swiper-container {
         padding: 30px 0;
-     }
+        height: 100%;
+        /* display: flex;
+        align-items: center;
+        justify-content: center; */
+        padding-top: 100px;
+    }
 
      #app__screens {
-        height: 520px;
+        height: 580px;
      }
+
+     #app__screens .container {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+    }
 
      .customers__content .customers__feedback{
         width: 700px;
@@ -175,9 +194,6 @@
             top: 155px;
     }
 
-    .about__section__content .info__text p{
-        font-size: 20px;
-    }
 
     .about__section__content .img-container{
         width: 400px;
@@ -209,15 +225,6 @@
 
      .app_download_content p{
         font-size: 20px;
-     }
-
-
-     .main__section__content .text .btns .btn{
-        width: 200px;
-     }
-
-     .main__section__content .text p{
-        font-size: 25px;
      }
 
      .app__features__content .card p{
@@ -270,6 +277,7 @@
 
     .main__section__content .text p{
         font-size: 20px;
+       
     }
 
     #main__section .plan__img{
@@ -291,10 +299,10 @@
         font-size: 15px;
      }
 
-
      #customers .custom__img {
-        bottom: -30px;
+        bottom: -15px;
         right: 20px;
+        width: 60px;
     }
 
     .main__section__content .text .btns .btn .btn__text .img img{
@@ -326,10 +334,11 @@
 
     #app__screens {
         height: 500px;
+        margin-top: 20px;
       }
 
       #app__screens .swiper-container .img{
-        height: 350px;
+        height: 300px;
       }
 
       .customers__content .customers__feedback{
@@ -381,7 +390,7 @@
     }
 
     .contact__form form textarea {
-        height: 100px;
+        height: 150px;
         font-size: 14px;
     }
 
@@ -424,6 +433,10 @@
 
     .copy__write h5{
         font-size: 20px;
+    }
+
+    .customers__content .customers__feedback .arrows{
+        bottom: 70px;
     }
 }
 
@@ -634,9 +647,35 @@
         width: 40px;
         height: 35px;
     }
+
+    .main__section__content .text p {
+        font-size: 15px;
+    }
+
+    h3 img{
+        animation: none;
+    }
 }
 
-@media (max-width: 425px) {
+@media (max-width: 600px) {
+    nav {
+        padding-top: 15px;
+        padding-bottom: 15px;
+        box-shadow: 0 0 5px #75757547;
+    }
+    
+    .nav__content .logo {
+        width: 106px;
+        height: 40px;
+    }
+
+    .nav__content .bar__icon {
+        width: 40px;
+        height: 30px;
+        font-size: 21px;
+    }
+
+
     .main__section__content{
         flex-direction: column-reverse;
     }
@@ -737,7 +776,7 @@
     }
 
     #app__screens .swiper-container .img {
-        width: 300px;
+        width: 250px;
         margin: auto;
     }
 
