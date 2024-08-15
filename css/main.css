@@ -1244,8 +1244,8 @@ footer .footer__line img{
     color: var(--main-color);
  }
 
-.copy__write span a{
-    color: red;
+.copy__write span {
+    color: #be0505;
 }
 
 .copy__write span i{
