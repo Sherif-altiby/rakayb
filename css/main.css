@@ -603,7 +603,7 @@ h3 img{
 }
 
 .app__features__content .card:hover{
-    box-shadow: 0 5px 10px #512ea6ba;
+    box-shadow: 0 5px 10px #512ea65c;
     transform: translateY(-20px);
 }
 
@@ -680,7 +680,7 @@ h3 img{
 }
 
 #app__screens .swiper-container .swiper-slide.swiper-slide-active{
-    transform: scale(1.3);
+    transform: scale(1.2);
 }
 
  #app__screens .swiper-pagination-bullet{
