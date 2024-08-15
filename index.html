@@ -13,6 +13,13 @@
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
     <!-- AOS animation link -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" />
+    <!-- OWL -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" />
+
+    <!-- Owl Carousel CSS -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" />
 
 
     <title>ركائب</title>
@@ -141,7 +148,7 @@
               <div class="card">
                   <div class="img"> <img src="./img/feature-img3.png" alt=""> </div>
                   <h2> خدمات متنوعة </h2>
-                  <p> في نفس المساحة في مكان واحد،هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة  </p>
+                  <p> في نفس المساحة في مكان واحد،هذا النص هو مثال لنص يمكن أن يستبدل في نفس في نفس المساحة في مكان واحد،هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحةا لمساحة  </p>
               </div>
           </div>
         </div>
@@ -151,26 +158,15 @@
     <section id="app__screens" data-aos="fade-up" >
       <div class="img__bg"> <img src="./img/screens-bg.png" alt=""> </div>
       <div class="container">
-            <div class="swiper-container swiper-screens">
-              <div class="swiper-wrapper">
-                  <div class="swiper-slide"> <div class="img"> <img src="./img/screen-1.png" alt=""> </div> </div>
-                  <div class="swiper-slide"> <div class="img"> <img src="./img/screen-2.png" alt=""> </div> </div>
-                  <div class="swiper-slide"> <div class="img"> <img src="./img/screen-3.png" alt=""> </div> </div>
-                  <div class="swiper-slide"> <div class="img"> <img src="./img/screen-4.png" alt=""> </div> </div>
-                  <div class="swiper-slide"> <div class="img"> <img src="./img/screen-4.png" alt=""> </div> </div>
-                  <div class="swiper-slide"> <div class="img"> <img src="./img/screen-4.png" alt=""> </div> </div>
-                  <div class="swiper-slide"> <div class="img"> <img src="./img/screen-4.png" alt=""> </div> </div>
-                  <div class="swiper-slide"> <div class="img"> <img src="./img/screen-4.png" alt=""> </div> </div>
-                  <div class="swiper-slide"> <div class="img"> <img src="./img/screen-4.png" alt=""> </div> </div>
-                  <div class="swiper-slide"> <div class="img"> <img src="./img/screen-4.png" alt=""> </div> </div>
-                  <div class="swiper-slide"> <div class="img"> <img src="./img/screen-4.png" alt=""> </div> </div>
-                  <div class="swiper-slide"> <div class="img"> <img src="./img/screen-4.png" alt=""> </div> </div>
-                  <div class="swiper-slide"> <div class="img"> <img src="./img/screen-4.png" alt=""> </div> </div>
-                 
-              </div>
-              <!-- Add Pagination (Optional) -->
-              <div class="swiper-pagination"></div>
-          </div>
+             
+          <div class="owl-carousel owl-theme">
+            <div class="item"> <div class="img"> <img src="./img/screen-1.png" alt=""> </div> </div>
+            <div class="item"> <div class="img"> <img src="./img/screen-2.png" alt=""> </div> </div>
+            <div class="item"> <div class="img"> <img src="./img/screen-3.png" alt=""> </div> </div>
+            <div class="item"> <div class="img"> <img src="./img/screen-4.png" alt=""> </div> </div>
+            <div class="item"> <div class="img"> <img src="./img/screen-4.png" alt=""> </div> </div>
+         </div>
+        
       </div>
     </section>
 
@@ -323,37 +319,33 @@
 
     <script src="./js/main.js"></script>
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+   <!-- jQuery -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+<!-- Owl Carousel JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script> 
     <script>
     
-    var swiper = new Swiper('.swiper-container.swiper-screens', {
-    loop: true,  
-    centeredSlides: true,   
-    slidesPerView: 1,
-    spaceBetween: 10,
-    pagination: {
-        el: '.swiper-pagination',
-        clickable: true,
-        type: 'bullets',
-        renderBullet: function (index, className) {
-            return '<span class="' + className + '"></span>';
-        },
-    },
-    on: {
-        init: function () {
-            console.log('Swiper initialized with ' + this.originalParams.slidesPerView + ' slides');
-        },
-    },
-    breakpoints: {
-        480: {
-            slidesPerView: 1,
-        },
-        768: {
-            slidesPerView: 3,
-        },
-        1024: {
-            slidesPerView: 5,
-        }
-    },
+    $(document).ready(function(){
+  $(".owl-carousel").owlCarousel({
+    loop: true,
+    center: true,
+    margin: 10,
+    dots: true,  // Ensures that pagination dots are enabled
+    responsive: {
+      0: {
+        items: 1
+      },
+      768: {
+        items: 3
+      },
+      1024: {
+        items: 5
+      },
+    }
+  });
 });
 
    </script>
@@ -368,10 +360,6 @@
             },
           loop: true, 
           centeredSlides: true, 
-          pagination: {
-              el: '.swiper-pagination',
-              clickable: true,
-          },
           breakpoints: {
             480: {
                 slidesPerView: 1, 
@@ -384,7 +372,7 @@
             }
         },
       });
-  </script>
+    </script>
 
   <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
   <script>
@@ -396,5 +384,19 @@
       mirror: false,
     })
   </script>
+  
+  <script>
+       const paragraphs = document.querySelectorAll('.app__features__content .card p');
+        
+        paragraphs.forEach(paragraph => {
+            const words = paragraph.innerText.split(' ');
+
+            if (words.length > 11) {
+                const truncatedText = words.slice(0, 20).join(' ') + '...';
+                paragraph.innerText = truncatedText;
+            }
+        });
+  </script>
+  
   </body>
 </html>

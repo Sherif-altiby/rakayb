@@ -8,6 +8,12 @@
         transform: rotate(15deg);
         height: 600px;
     }
+
+    .about__section__content .info__text p {
+        font-size: 23px;
+        line-height: 2;
+        width: 90%;
+    }
 }
 
 @media (max-width: 1640px) {
@@ -60,9 +66,7 @@
         top: 170px;
     }
 
-    .about__section__content .info__text p{
-        font-size: 20px;
-    }
+   
 
     #app__screens  .swiper-container .img{
         height: 400px;
@@ -205,6 +209,11 @@
     #main__section .plan__img {
             top: 155px;
     }
+
+    .about__section__content .info__text p{
+        width: 100%;
+        line-height: 1.6;
+     }
 
 
     .about__section__content .img-container{
@@ -907,8 +916,10 @@
         font-size: 14px;
     }
 
-    section{
-        /* overflow-x: hidden;; */
+    #app__screens  .owl-carousel .img {
+        height: 350px;
+        width: 270px;
+        margin: auto;
     }
 }
 
